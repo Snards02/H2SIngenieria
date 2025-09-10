@@ -6,7 +6,7 @@
     "indexes": "firestore.indexes.json"
   },
   "hosting": {
-    "public": "y",
+    "public": "dist/h2-singenieria",
     "ignore": [
       "firebase.json",
       "**/.*",
