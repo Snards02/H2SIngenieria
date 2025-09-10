@@ -1,0 +1,66 @@
+.proyectos {
+    padding: 60px 0;
+    text-align: center;
+}
+
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #f5c518;
+}
+
+
+.section-subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    color: #888;
+}
+
+
+.proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+
+.proyecto-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+
+.proyecto-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.proyecto-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.proyecto-content {
+    padding: 20px;
+}
+
+
+.btn {
+    background: #f5c518;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+
+.btn:hover {
+    background: #e0a800;
+}

@@ -1,0 +1,16 @@
+<section class="servicios section-dark">
+  <div class="container">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <p class="section-subtitle">Brindamos soluciones integrales en obras civiles</p>
+
+    <div class="servicios-grid">
+      <div class="servicio-card" *ngFor="let servicio of servicios">
+        <div class="icono">
+          <img [src]="servicio.icono" alt="{{ servicio.titulo }}">
+        </div>
+        <h3>{{ servicio.titulo }}</h3>
+        <p>{{ servicio.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+</section>

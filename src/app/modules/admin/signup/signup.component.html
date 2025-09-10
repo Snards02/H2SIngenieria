@@ -1,0 +1,46 @@
+<div class="wrapper">
+    <div class="page-header" style="background-image: url('./assets/img/login-image.jpg');">
+        <div class="filter"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mr-auto ml-auto">
+                      <div class="card card-register card-fondo">
+                          <h3 class="title text-white">¡Bienvenido!</h3>
+                          <div class="social-line text-center">
+                             <img class="logo" src="./assets/img/LOGO.png" alt="logo" srcset="">
+                                 
+                          </div>
+                          <form class="register-form" (ngSubmit)="onloggen()">
+                              <label>Correo Electrónico</label>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-email-85"></i>
+                                  </span>
+                                </div>
+                                  <input type="email" class="form-control" placeholder="Email" name="email" [(ngModel)]="email" required >
+                                  
+                              </div>
+
+                              <label>Contraseña</label>
+                              <div class="input-group form-group-no-border" [ngClass]="{'input-group-focus':focus1===true}">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">
+                                      <i class="nc-icon nc-key-25"></i>
+                                  </span>
+                                </div>
+                                  <input type="password" class="form-control" name="password" placeholder="Password" [(ngModel)]="password"  required>
+                              </div>
+                              <button class="btn btn-warning btn-block btn-round" type="submit">Iniciar Sesión</button>
+                          </form>
+                      </div>
+                    </div>
+                </div>
+                <div class="footer register-footer text-center">
+                    <h6>&copy;{{test | date: 'yyyy'}}, made with <i class="fa fa-heart heart"></i> by Brayan Sierra</h6>
+                </div>
+            </div>
+    </div>
+</div>
+<router-outlet></router-outlet>
+
