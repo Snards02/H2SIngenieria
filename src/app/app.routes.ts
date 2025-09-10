@@ -10,7 +10,7 @@ import { ProyectosComponentAdmin } from './modules/admin/proyectos/proyectos.com
 export const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: LandingComponent},
-    { path: 'Admin', component: AdminComponent },
+    { path: 'admin-root', component: AdminComponent },
     { path: 'landing', component: LandingComponentAdmin, children: [
         { path: 'dashboard', component: DashboardComponent },
         { path: 'proyectos', component: ProyectosComponentAdmin },
